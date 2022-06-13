@@ -1,0 +1,41 @@
+.results-container {
+  display: flex;
+  flex-direction: column;
+  width: 368px;
+  padding: 4px 12px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.header > span {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.sub-header > span {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.sub-header {
+  margin: 6px;
+}
+
+.salary-breakdown,
+.expense-breakdown {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 12px;
+}
+
+.row-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}

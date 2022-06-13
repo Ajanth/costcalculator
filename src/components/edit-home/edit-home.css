@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  border: 8px solid #c9f2f6;
+  background: #a6e2e8;
+  width: fit-content;
+}
+
+.container .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  background: #ffffff5e;
+  padding: 2px 20px 10px;
+}
+
+.container .form > div {
+  margin-bottom: 8px;
+}
+
+.form-cell {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.form-control {
+  text-align: center;
+  height: 32px;
+  max-width: 80vw;
+  padding: 2px 8px;
+  border-radius: 3px;
+  border: 1px solid hsl(0, 0%, 80%);
+  font-size: 16px;
+  transition: all 0.1s ease;
+  outline: none;
+}
+
+.form-cell.small-width {
+  width: 120px;
+}
+
+.form-cell.small-width .form-control {
+  padding: 18px 0px;
+}
+
+.form-control:hover {
+  border-color: hsl(0, 0%, 70%);
+}
+
+.form-control:focus {
+  border-color: #2684ff;
+  box-shadow: 0 0 0 1px #2684ff;
+}
+
+.form-control:focus:hover {
+  border-color: #2684ff;
+}
+
+.number-control {
+  display: flex;
+  flex-direction: row;
+  width: 120px;
+}
+
+.form-cell .control-label {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 0px;
+}
+
+.salary-inputs {
+  display: flex;
+}
+
+.hero-container {
+  display: flex;
+  position: relative;
+  width: 400px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.hero-container img {
+  width: 450px;
+}
+
+.actions {
+  text-align: center;
+}
+
+.checkmarks {
+  list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container.reverse {
+    flex-direction: column-reverse;
+  }
+
+  .container .form {
+    flex-direction: column;
+  }
+}
